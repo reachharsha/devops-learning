@@ -1,11 +1,11 @@
 # devops-learning
 
-Welcome to my DevOps learning notes! Below are the Networking Essentials topics:
+🚀 **Networking for DevOps Engineers - Complete Learning Path**
 
-## Networking Essentials
+## Topics
 
 - [00 - START HERE](networking-essentials/00-START-HERE.md)
-- [01 - What is Networking](networking-essentials/01-what-is-networking.md)
+- [01 - What Is Networking?](networking-essentials/01-what-is-networking.md)
 - [02 - How Data Travels](networking-essentials/02-how-data-travels.md)
 - [03 - Binary Basics](networking-essentials/03-binary-basics.md)
 - [04 - Network Hardware](networking-essentials/04-network-hardware.md)
@@ -16,7 +16,7 @@ Welcome to my DevOps learning notes! Below are the Networking Essentials topics:
 - [09 - Routing](networking-essentials/09-routing.md)
 - [10 - Switching](networking-essentials/10-switching.md)
 - [11 - NAT](networking-essentials/11-nat.md)
-- [12 - Protocols](networking-essentials/12-protocols.md)
+- [12 - Network Protocols](networking-essentials/12-protocols.md)
 - [13 - Linux Network Commands](networking-essentials/13-linux-network-commands.md)
 - [14 - Troubleshooting Methodology](networking-essentials/14-troubleshooting-methodology.md)
 - [15 - DNS Deep Dive](networking-essentials/15-dns-deep-dive.md)
