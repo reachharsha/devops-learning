@@ -2,60 +2,127 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>devops-learning</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DevOps Learning - Networking Essentials</title>
+  
+  <!-- Google Fonts for clean typography -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
   <style>
+    /* Reset & body styles */
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      max-width: 900px;
-      margin: auto;
-      padding: 1rem;
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
       line-height: 1.6;
     }
-    h1 {
+
+    /* Container */
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    /* Header */
+    header {
+      text-align: center;
+      padding-bottom: 2rem;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
       margin-bottom: 0.5rem;
     }
-    ul {
-      list-style-type: none;
-      padding-left: 0;
+
+    header p {
+      font-size: 1.2rem;
+      color: #555;
     }
-    ul li {
-      margin: 0.5rem 0;
+
+    /* Topic cards */
+    .topics {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1rem;
+      margin-top: 2rem;
     }
-    a {
+
+    .topic-card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .topic-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.12);
+    }
+
+    .topic-card a {
       text-decoration: none;
       color: #0366d6;
       font-weight: 600;
+      font-size: 1.1rem;
     }
-    a:hover {
+
+    .topic-card a:hover {
       text-decoration: underline;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      margin-top: 4rem;
+      padding-top: 2rem;
+      border-top: 1px solid #ddd;
+      color: #666;
+      font-size: 0.9rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 500px) {
+      header h1 {
+        font-size: 2rem;
+      }
     }
   </style>
 </head>
 <body>
-  <h1>devops-learning</h1>
-  <p>🚀 Networking for DevOps Engineers - Complete Learning Path</p>
+  <div class="container">
+    <header>
+      <h1>DevOps Learning</h1>
+      <p>🚀 Networking Essentials - Complete Learning Path</p>
+    </header>
 
-  <h2>Topics</h2>
-  <ul>
-    <li><a href="networking-essentials/00-START-HERE.md">00 - START HERE</a></li>
-    <li><a href="networking-essentials/01-what-is-networking.md">01 - What Is Networking?</a></li>
-    <li><a href="networking-essentials/02-how-data-travels.md">02 - How Data Travels</a></li>
-    <li><a href="networking-essentials/03-binary-basics.md">03 - Binary Basics</a></li>
-    <li><a href="networking-essentials/04-network-hardware.md">04 - Network Hardware</a></li>
-    <li><a href="networking-essentials/05-network-interfaces.md">05 - Network Interfaces</a></li>
-    <li><a href="networking-essentials/06-osi-model.md">06 - OSI Model</a></li>
-    <li><a href="networking-essentials/07-ip-addressing.md">07 - IP Addressing</a></li>
-    <li><a href="networking-essentials/08-subnetting.md">08 - Subnetting</a></li>
-    <li><a href="networking-essentials/09-routing.md">09 - Routing</a></li>
-    <li><a href="networking-essentials/10-switching.md">10 - Switching</a></li>
-    <li><a href="networking-essentials/11-nat.md">11 - NAT</a></li>
-    <li><a href="networking-essentials/12-protocols.md">12 - Network Protocols</a></li>
-    <li><a href="networking-essentials/13-linux-network-commands.md">13 - Linux Network Commands</a></li>
-    <li><a href="networking-essentials/14-troubleshooting-methodology.md">14 - Troubleshooting Methodology</a></li>
-    <li><a href="networking-essentials/15-dns-deep-dive.md">15 - DNS Deep Dive</a></li>
-    <li><a href="networking-essentials/16-firewall-basics.md">16 - Firewall Basics</a></li>
-    <li><a href="networking-essentials/17-network-monitoring.md">17 - Network Monitoring</a></li>
-  </ul>
+    <section class="topics">
+      <div class="topic-card"><a href="networking-essentials/00-START-HERE.md">00 - START HERE</a></div>
+      <div class="topic-card"><a href="networking-essentials/01-what-is-networking.md">01 - What Is Networking?</a></div>
+      <div class="topic-card"><a href="networking-essentials/02-how-data-travels.md">02 - How Data Travels</a></div>
+      <div class="topic-card"><a href="networking-essentials/03-binary-basics.md">03 - Binary Basics</a></div>
+      <div class="topic-card"><a href="networking-essentials/04-network-hardware.md">04 - Network Hardware</a></div>
+      <div class="topic-card"><a href="networking-essentials/05-network-interfaces.md">05 - Network Interfaces</a></div>
+      <div class="topic-card"><a href="networking-essentials/06-osi-model.md">06 - OSI Model</a></div>
+      <div class="topic-card"><a href="networking-essentials/07-ip-addressing.md">07 - IP Addressing</a></div>
+      <div class="topic-card"><a href="networking-essentials/08-subnetting.md">08 - Subnetting</a></div>
+      <div class="topic-card"><a href="networking-essentials/09-routing.md">09 - Routing</a></div>
+      <div class="topic-card"><a href="networking-essentials/10-switching.md">10 - Switching</a></div>
+      <div class="topic-card"><a href="networking-essentials/11-nat.md">11 - NAT</a></div>
+      <div class="topic-card"><a href="networking-essentials/12-protocols.md">12 - Network Protocols</a></div>
+      <div class="topic-card"><a href="networking-essentials/13-linux-network-commands.md">13 - Linux Network Commands</a></div>
+      <div class="topic-card"><a href="networking-essentials/14-troubleshooting-methodology.md">14 - Troubleshooting Methodology</a></div>
+      <div class="topic-card"><a href="networking-essentials/15-dns-deep-dive.md">15 - DNS Deep Dive</a></div>
+      <div class="topic-card"><a href="networking-essentials/16-firewall-basics.md">16 - Firewall Basics</a></div>
+      <div class="topic-card"><a href="networking-essentials/17-network-monitoring.md">17 - Network Monitoring</a></div>
+    </section>
+
+    <footer>
+      &copy; 2026 DevOps Learning. Built with ❤️ using GitHub Pages.
+    </footer>
+  </div>
 </body>
 </html>
