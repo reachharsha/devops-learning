@@ -1,3 +1,6 @@
+---
+render_with_liquid: false
+---
 # 14 - Text Editors
 
 ## 🎯 Learning Objectives

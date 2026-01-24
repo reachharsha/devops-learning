@@ -1,3 +1,6 @@
+---
+render_with_liquid: false
+---
 # 10 - Switching and MAC Addresses
 
 ## 🎯 Learning Objectives

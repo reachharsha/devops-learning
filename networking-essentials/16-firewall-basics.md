@@ -1,3 +1,6 @@
+---
+render_with_liquid: false
+---
 # 16 - Firewall Basics
 
 ## 🎯 Learning Objectives

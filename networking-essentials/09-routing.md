@@ -1,3 +1,6 @@
+---
+render_with_liquid: false
+---
 # 09 - Routing: How Packets Find Their Way
 
 ## 🎯 Learning Objectives

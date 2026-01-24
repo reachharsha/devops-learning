@@ -1,3 +1,6 @@
+---
+render_with_liquid: false
+---
 # 15 - Shell Scripting
 
 ## 🎯 Learning Objectives

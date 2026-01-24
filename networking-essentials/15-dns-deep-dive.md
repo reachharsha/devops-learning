@@ -1,3 +1,6 @@
+---
+render_with_liquid: false
+---
 # 15 - DNS Deep Dive
 
 ## 🎯 Learning Objectives

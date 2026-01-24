@@ -1,3 +1,6 @@
+---
+render_with_liquid: false
+---
 # 10 - System Services
 
 ## 🎯 Learning Objectives

@@ -1,3 +1,6 @@
+---
+render_with_liquid: false
+---
 # 02 - How Data Travels
 
 ## 🎯 Learning Objectives

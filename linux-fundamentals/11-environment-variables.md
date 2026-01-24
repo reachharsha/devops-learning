@@ -1,3 +1,6 @@
+---
+render_with_liquid: false
+---
 # 11 - Environment Variables
 
 ## 🎯 Learning Objectives

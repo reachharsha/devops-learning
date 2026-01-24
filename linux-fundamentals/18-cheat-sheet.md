@@ -1,3 +1,6 @@
+---
+render_with_liquid: false
+---
 # 18 - Linux Command Cheat Sheet
 
 ## 🎯 Quick Reference Guide

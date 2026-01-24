@@ -1,3 +1,6 @@
+---
+render_with_liquid: false
+---
 # 07 - Process Management
 
 ## 🎯 Learning Objectives

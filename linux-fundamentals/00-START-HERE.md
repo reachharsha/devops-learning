@@ -1,3 +1,6 @@
+---
+render_with_liquid: false
+---
 # 🐧 Linux Fundamentals: Complete Beginner to DevOps Ready
 
 ## 👋 Welcome!

@@ -1,3 +1,6 @@
+---
+render_with_liquid: false
+---
 # 07 - IP Addressing
 
 ## 🎯 Learning Objectives

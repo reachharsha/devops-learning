@@ -1,3 +1,6 @@
+---
+render_with_liquid: false
+---
 # 05 - File Permissions
 
 ## 🎯 Learning Objectives

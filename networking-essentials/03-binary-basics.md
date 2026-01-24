@@ -1,3 +1,6 @@
+---
+render_with_liquid: false
+---
 # 03 - Binary Basics
 
 ## 🎯 Learning Objectives

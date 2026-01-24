@@ -1,3 +1,6 @@
+---
+render_with_liquid: false
+---
 # 13 - I/O Redirection & Pipes
 
 ## 🎯 Learning Objectives

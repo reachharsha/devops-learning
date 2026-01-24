@@ -1,3 +1,6 @@
+---
+render_with_liquid: false
+---
 # 04 - Network Hardware
 
 ## 🎯 Learning Objectives

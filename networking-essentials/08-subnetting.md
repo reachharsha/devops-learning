@@ -1,3 +1,6 @@
+---
+render_with_liquid: false
+---
 # 08 - Subnetting Made Simple
 
 ## 🎯 Learning Objectives

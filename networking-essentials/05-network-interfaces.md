@@ -1,3 +1,6 @@
+---
+render_with_liquid: false
+---
 # 05 - Network Interfaces
 
 ## 🎯 Learning Objectives

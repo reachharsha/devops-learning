@@ -1,3 +1,6 @@
+---
+render_with_liquid: false
+---
 # 02 - File System Fundamentals
 
 ## 🎯 Learning Objectives

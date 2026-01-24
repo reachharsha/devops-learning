@@ -1,3 +1,6 @@
+---
+render_with_liquid: false
+---
 # 09 - Network Commands
 
 ## 🎯 Learning Objectives

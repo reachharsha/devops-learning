@@ -1,3 +1,6 @@
+---
+render_with_liquid: false
+---
 # 13 - Essential Linux Networking Commands
 
 ## 🎯 Learning Objectives
