@@ -1,3 +1,6 @@
+---
+render_with_liquid: false
+---
 # 16 - Text Processing: grep & sed
 
 ## 🎯 Learning Objectives

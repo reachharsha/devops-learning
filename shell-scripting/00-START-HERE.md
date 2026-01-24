@@ -1,3 +1,6 @@
+---
+render_with_liquid: false
+---
 # 🚀 Shell Scripting Mastery: Zero to DevOps Hero
 
 ## Welcome to Your Shell Scripting Journey!

@@ -1,3 +1,6 @@
+---
+render_with_liquid: false
+---
 # 30 - Best Practices and Common Pitfalls
 
 ## 🎯 Learning Objectives

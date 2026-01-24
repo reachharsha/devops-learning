@@ -1,3 +1,6 @@
+---
+render_with_liquid: false
+---
 # 19 - Error Handling
 
 ## 🎯 Learning Objectives

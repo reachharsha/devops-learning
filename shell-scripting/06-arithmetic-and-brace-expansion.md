@@ -1,3 +1,6 @@
+---
+render_with_liquid: false
+---
 # 06 - Arithmetic & Brace Expansion
 
 ## 🎯 Learning Objectives

@@ -1,3 +1,6 @@
+---
+render_with_liquid: false
+---
 # 03 - Variables & Data Types
 
 ## 🎯 Learning Objectives

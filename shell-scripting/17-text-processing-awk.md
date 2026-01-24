@@ -1,3 +1,6 @@
+---
+render_with_liquid: false
+---
 # 17 - Text Processing: awk
 
 ## 🎯 Learning Objectives

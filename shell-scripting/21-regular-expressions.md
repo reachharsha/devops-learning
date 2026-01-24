@@ -1,3 +1,6 @@
+---
+render_with_liquid: false
+---
 # 21 - Regular Expressions Mastery
 
 ## 🎯 Learning Objectives

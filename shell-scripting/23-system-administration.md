@@ -1,3 +1,6 @@
+---
+render_with_liquid: false
+---
 # 23 - System Administration Scripts
 
 ## 🎯 Learning Objectives

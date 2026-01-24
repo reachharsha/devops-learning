@@ -1,3 +1,6 @@
+---
+render_with_liquid: false
+---
 # 14 - File Operations
 
 ## 🎯 Learning Objectives

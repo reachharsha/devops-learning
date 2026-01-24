@@ -1,3 +1,6 @@
+---
+render_with_liquid: false
+---
 # 25 - Security Best Practices
 
 ## 🎯 Learning Objectives

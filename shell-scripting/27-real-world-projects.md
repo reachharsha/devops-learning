@@ -1,3 +1,6 @@
+---
+render_with_liquid: false
+---
 # 27 - Real-World Projects
 
 ## 🎯 Learning Objectives

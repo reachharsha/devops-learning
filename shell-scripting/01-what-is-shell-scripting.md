@@ -1,3 +1,6 @@
+---
+render_with_liquid: false
+---
 # 01 - What is Shell Scripting?
 
 ## 🎯 Learning Objectives

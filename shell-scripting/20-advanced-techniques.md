@@ -1,3 +1,6 @@
+---
+render_with_liquid: false
+---
 # 20 - Advanced Techniques
 
 ## 🎯 Learning Objectives

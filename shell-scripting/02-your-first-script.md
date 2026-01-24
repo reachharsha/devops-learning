@@ -1,3 +1,6 @@
+---
+render_with_liquid: false
+---
 # 02 - Your First Script
 
 ## 🎯 Learning Objectives

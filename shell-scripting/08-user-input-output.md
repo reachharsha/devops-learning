@@ -1,3 +1,6 @@
+---
+render_with_liquid: false
+---
 # 08 - User Input & Output
 
 ## 🎯 Learning Objectives

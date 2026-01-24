@@ -1,3 +1,6 @@
+---
+render_with_liquid: false
+---
 # 09 - Conditionals
 
 ## 🎯 Learning Objectives

@@ -1,3 +1,6 @@
+---
+render_with_liquid: false
+---
 # 12 - Arrays
 
 ## 🎯 Learning Objectives

@@ -1,3 +1,6 @@
+---
+render_with_liquid: false
+---
 # 13 - String Manipulation
 
 ## 🎯 Learning Objectives

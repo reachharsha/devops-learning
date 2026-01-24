@@ -1,3 +1,6 @@
+---
+render_with_liquid: false
+---
 # 26 - Testing and Debugging
 
 ## 🎯 Learning Objectives

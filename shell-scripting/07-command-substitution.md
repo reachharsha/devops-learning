@@ -1,3 +1,6 @@
+---
+render_with_liquid: false
+---
 # 07 - Command Substitution
 
 ## 🎯 Learning Objectives

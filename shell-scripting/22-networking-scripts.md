@@ -1,3 +1,6 @@
+---
+render_with_liquid: false
+---
 # 22 - Networking Scripts
 
 ## 🎯 Learning Objectives
