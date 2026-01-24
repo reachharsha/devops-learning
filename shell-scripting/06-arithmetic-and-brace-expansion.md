@@ -292,7 +292,7 @@ echo {A..C}{1..3}          # A1 A2 A3 B1 B2 B3 C1 C2 C3
 echo {a,b}_{1,2}           # a_1 a_2 b_1 b_2
 
 # Complex nesting
-echo {{A..C},{1..3}}       # A B C 1 2 3
+echo {A..C} {1..3}         # A B C 1 2 3
 
 # Practical: Create directory structure
 mkdir -p project/{src,bin,docs}/{main,test}

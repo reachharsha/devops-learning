@@ -325,7 +325,7 @@ exec_command() {
 
 # Container health check
 health_check() {
-    docker inspect "$CONTAINER_NAME" --format='{{.State.Health.Status}}'
+    docker inspect "$CONTAINER_NAME" --format='{ {.State.Health.Status} }'
 }
 
 # Clean up old images
@@ -336,7 +336,7 @@ cleanup() {
     docker image prune -f
     
     # Remove old versions (keep last 3)
-    docker images "$IMAGE_NAME" --format "{{.Tag}}" | \
+    docker images "$IMAGE_NAME" --format "{ {.Tag} }" | \
         tail -n +4 | \
         xargs -I {} docker rmi "$IMAGE_NAME:{}"
 }

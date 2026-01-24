@@ -548,7 +548,7 @@ render_template() {
 }
 
 # Usage
-TEMPLATE="Hello {{name}}, your order #{{order_id}} is {{status}}"
+TEMPLATE="Hello { {name} }, your order #{ {order_id} } is { {status} }"
 
 declare -A DATA=(
     [name]="John"
