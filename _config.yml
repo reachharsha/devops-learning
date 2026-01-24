@@ -1,0 +1,14 @@
+theme: jekyll-theme-primer
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+include:
+  - linux-fundamentals
+  - networking-essentials
+  - shell-scripting
+
+exclude:
+  - README.md
+  - GITHUB_PAGES_SETUP.md
