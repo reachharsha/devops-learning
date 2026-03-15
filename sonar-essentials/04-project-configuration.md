@@ -125,4 +125,4 @@ Either is valid. The best choice is the one that your team will maintain.
 
 ## Next
 
-Go to **Lesson 05**: Issues, rules, and Quality Profiles.
+Go to **Lesson 05**: [Issues, rules, and Quality Profiles](05-rules-and-quality-profiles.md).

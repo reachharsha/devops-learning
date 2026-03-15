@@ -88,4 +88,4 @@ If you rely on plugins:
 
 ## Next
 
-Go to **Lesson 22**: performance and scaling basics.
+Go to **Lesson 22**: [performance and scaling basics](22-performance-and-scaling.md).

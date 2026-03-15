@@ -87,4 +87,4 @@ This prevents “why did our pipeline start failing today?” incidents.
 
 ## Next
 
-Go to **Lesson 18**: governance and organization-wide standards.
+Go to **Lesson 18**: [governance and organization-wide standards](18-governance-quality-standards.md).

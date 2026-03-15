@@ -230,4 +230,4 @@ This keeps Sonar from becoming unmaintainable.
 
 ## Next
 
-Go to **Lesson 07**: Quality Gates.
+Go to **Lesson 07**: [Quality Gates](07-quality-gates.md).

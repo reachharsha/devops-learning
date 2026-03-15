@@ -93,4 +93,4 @@ Fix later:
 
 ## Next
 
-Go to **Lesson 17**: false positives and tuning.
+Go to **Lesson 17**: [false positives and tuning](17-false-positives-and-tuning.md).

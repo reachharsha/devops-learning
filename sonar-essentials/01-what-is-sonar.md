@@ -131,4 +131,4 @@ Pick a repo and run one:
 
 ## Next
 
-Go to **Lesson 02**: Install SonarQube (Docker) + SonarCloud setup.
+Go to **Lesson 02**: [Install SonarQube (Docker) + SonarCloud setup](02-install-sonarqube.md).

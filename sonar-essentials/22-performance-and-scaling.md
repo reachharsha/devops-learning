@@ -75,4 +75,4 @@ If compute tasks pile up, quality gate feedback gets slow.
 
 ## Next
 
-Go to **Lesson 23**: troubleshooting playbook.
+Go to **Lesson 23**: [troubleshooting playbook](23-troubleshooting-playbook.md).

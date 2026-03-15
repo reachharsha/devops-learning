@@ -110,4 +110,4 @@ In Sonar UI:
 
 ## Next
 
-Go to **Lesson 06**: Metrics & issue types.
+Go to **Lesson 06**: [Metrics & issue types](06-metrics-and-issues.md).

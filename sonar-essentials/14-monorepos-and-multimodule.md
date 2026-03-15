@@ -97,4 +97,4 @@ Be strict with exclusions so you analyze *source code*, not artifacts.
 
 ## Next
 
-Go to **Lesson 15**: Vulnerabilities vs Security Hotspots.
+Go to **Lesson 15**: [Vulnerabilities vs Security Hotspots](15-security-vulnerabilities-hotspots.md).

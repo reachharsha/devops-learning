@@ -81,4 +81,4 @@ If your org supports it, create templates:
 
 ## Next
 
-Go to **Lesson 21**: backups and upgrades.
+Go to **Lesson 21**: [backups and upgrades](21-backups-upgrades-maintenance.md).

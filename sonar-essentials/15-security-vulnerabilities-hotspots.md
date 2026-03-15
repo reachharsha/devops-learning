@@ -148,4 +148,4 @@ Avoid:
 
 ## Next
 
-Go to **Lesson 16**: Triage workflow.
+Go to **Lesson 16**: [Triage workflow](16-triage-workflow.md).

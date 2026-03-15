@@ -98,4 +98,4 @@ Also check DB logs if there are connection errors.
 
 ## Next
 
-Go to **Lesson 24**: production checklist + cheat sheet.
+Go to **Lesson 24**: [production checklist + cheat sheet](24-production-checklist-cheat-sheet.md).

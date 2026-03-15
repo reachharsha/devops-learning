@@ -141,4 +141,4 @@ Bonus:
 
 ## Next
 
-Go to **Lesson 09**: Branch and Pull Request analysis.
+Go to **Lesson 09**: [Branch and Pull Request analysis](09-branches-and-pull-requests.md).

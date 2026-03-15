@@ -153,4 +153,4 @@ You’ll generate a token and store it in your CI secrets.
 
 ## Next
 
-Go to **Lesson 03**: Your first scan.
+Go to **Lesson 03**: [Your first scan](03-your-first-scan.md).

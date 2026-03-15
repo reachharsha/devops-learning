@@ -98,4 +98,4 @@ In Sonar UI:
 
 ## Next
 
-Go to **Lesson 08**: Coverage & test reports.
+Go to **Lesson 08**: [Coverage & test reports](08-tests-and-coverage.md).

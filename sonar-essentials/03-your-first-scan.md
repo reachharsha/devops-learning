@@ -133,4 +133,4 @@ Focus on:
 
 ## Next
 
-Go to **Lesson 04**: Project configuration (keys, tokens, properties).
+Go to **Lesson 04**: [Project configuration (keys, tokens, properties)](04-project-configuration.md).

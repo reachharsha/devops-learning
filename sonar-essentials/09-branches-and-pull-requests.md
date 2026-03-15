@@ -86,4 +86,4 @@ If using SonarCloud or a SonarQube edition that supports PR decoration:
 
 ## Next
 
-Go to **Lesson 10**: GitHub Actions integration.
+Go to **Lesson 10**: [GitHub Actions integration](10-ci-github-actions.md).

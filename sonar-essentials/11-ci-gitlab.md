@@ -99,4 +99,4 @@ During early rollout, you can run Sonar on MRs with **soft enforcement**:
 
 ## Next
 
-Go to **Lesson 12**: Jenkins integration.
+Go to **Lesson 12**: [Jenkins integration](12-ci-jenkins.md).

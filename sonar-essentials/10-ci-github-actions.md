@@ -110,4 +110,4 @@ Depending on your scanner and platform, you can:
 
 ## Next
 
-Go to **Lesson 11**: GitLab CI integration.
+Go to **Lesson 11**: [GitLab CI integration](11-ci-gitlab.md).

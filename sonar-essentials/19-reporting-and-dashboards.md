@@ -87,4 +87,4 @@ They need:
 
 ## Next
 
-Go to **Lesson 20**: SonarQube administration.
+Go to **Lesson 20**: [SonarQube administration](20-administration-users-permissions.md).

@@ -136,4 +136,4 @@ Sonar is not:
 
 ## Next
 
-Start with **Lesson 01**: *What is Sonar?*
+Start with **Lesson 01**: [What is Sonar?](01-what-is-sonar.md)

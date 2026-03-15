@@ -167,4 +167,4 @@ Pick your stack and:
 
 ## Next
 
-Go to **Lesson 14**: Monorepos & multi-module projects.
+Go to **Lesson 14**: [Monorepos & multi-module projects](14-monorepos-and-multimodule.md).

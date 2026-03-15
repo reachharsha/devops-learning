@@ -98,4 +98,4 @@ Notes:
 
 ## Next
 
-Go to **Lesson 13**: Language-specific scanners.
+Go to **Lesson 13**: [Language-specific scanners](13-language-integrations.md).

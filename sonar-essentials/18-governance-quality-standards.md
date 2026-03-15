@@ -79,4 +79,4 @@ Design your org policy:
 
 ## Next
 
-Go to **Lesson 19**: reporting and dashboards.
+Go to **Lesson 19**: [reporting and dashboards](19-reporting-and-dashboards.md).
