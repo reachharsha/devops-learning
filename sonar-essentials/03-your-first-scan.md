@@ -77,6 +77,17 @@ sonar-scanner \
   -Dsonar.login=YOUR_TOKEN
 ```
 
+### If your project is Java + Maven (recommended for Java)
+
+If you already have a Maven build, prefer the Maven scanner:
+
+```bash
+mvn -B test
+mvn -B sonar:sonar \
+  -Dsonar.host.url=http://localhost:9000 \
+  -Dsonar.login=YOUR_TOKEN
+```
+
 ### If using SonarCloud
 You’ll typically use CI + the SonarCloud action/pipe, but local runs can work if configured.
 

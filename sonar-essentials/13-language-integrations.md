@@ -30,6 +30,71 @@ Why Maven scanner is preferred:
 - It understands multi-module Maven projects
 - It integrates well with CI
 
+### Maven “copy/paste” cookbook (recommended)
+
+This is the most common, repeatable flow for Java + Maven:
+
+#### 1) Run tests + generate coverage
+
+If you configured JaCoCo XML (see Lesson 08), run:
+
+```bash
+mvn -B test
+```
+
+JaCoCo XML typically ends up at:
+- `target/site/jacoco/jacoco.xml` (single module)
+
+#### 2) Run Sonar analysis
+
+For SonarQube:
+
+```bash
+mvn -B sonar:sonar \
+	-Dsonar.host.url=$SONAR_HOST_URL \
+	-Dsonar.login=$SONAR_TOKEN
+```
+
+For SonarCloud:
+
+```bash
+mvn -B sonar:sonar \
+	-Dsonar.login=$SONAR_TOKEN
+```
+
+If you need to pass project identity from the command line:
+
+```bash
+mvn -B sonar:sonar \
+	-Dsonar.projectKey=org_service-api \
+	-Dsonar.projectName="Service API" \
+	-Dsonar.login=$SONAR_TOKEN \
+	-Dsonar.host.url=$SONAR_HOST_URL
+```
+
+#### 3) Coverage import (Maven)
+
+Add this to `sonar-project.properties` if needed:
+
+```properties
+sonar.coverage.jacoco.xmlReportPaths=target/site/jacoco/jacoco.xml
+```
+
+### Multi-module Maven projects
+
+Best practices:
+- Run analysis from the **root** aggregator project.
+- Generate JaCoCo reports in a way that Sonar can find them (paths matter).
+- If coverage shows 0%, it’s usually a report path mismatch.
+
+In many setups, this is enough:
+
+```bash
+mvn -B test sonar:sonar \
+	-Dsonar.login=$SONAR_TOKEN \
+	-Dsonar.host.url=$SONAR_HOST_URL
+```
+
 
 ## 2) Java (Gradle)
 
