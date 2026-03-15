@@ -32,6 +32,32 @@ How to treat them:
 - Fix quickly on new code
 - Add tests to prevent regression
 
+### Java examples (typical vulnerability patterns)
+
+#### Example A: SQL injection (vulnerability)
+
+```java
+public List<User> search(Connection conn, String q) throws Exception {
+   String sql = "SELECT id, name FROM users WHERE name LIKE '%" + q + "%'";
+   try (Statement st = conn.createStatement();
+       ResultSet rs = st.executeQuery(sql)) {
+      List<User> out = new ArrayList<>();
+      while (rs.next()) out.add(new User(rs.getLong(1), rs.getString(2)));
+      return out;
+   }
+}
+```
+
+Fix: use parameterized queries (PreparedStatement) and escape wildcard patterns appropriately.
+
+#### Example B: Hard-coded credential (vulnerability)
+
+```java
+private static final String DB_PASSWORD = "P@ssw0rd";
+```
+
+Fix: move secrets to environment variables / secret manager, rotate immediately.
+
 ---
 
 ## 2) Security Hotspots
@@ -50,6 +76,30 @@ Common hotspot patterns:
 Hotspots require:
 - a reviewer
 - context (where input comes from, what controls exist)
+
+### Java examples (typical hotspot patterns)
+
+#### Example C: Crypto configuration (hotspot)
+
+```java
+Cipher cipher = Cipher.getInstance("AES/ECB/PKCS5Padding");
+cipher.init(Cipher.ENCRYPT_MODE, key);
+```
+
+Why hotspot?
+- Crypto is easy to misuse.
+- ECB mode is often unsafe; a reviewer should confirm the threat model and recommend safer modes.
+
+#### Example D: Deserialization or parsing untrusted input (hotspot)
+
+```java
+ObjectInputStream ois = new ObjectInputStream(request.getInputStream());
+Object obj = ois.readObject();
+```
+
+Why hotspot?
+- If input is attacker-controlled, unsafe deserialization can lead to RCE in some environments.
+- Requires careful review: is input trusted, is there validation, can format be replaced?
 
 ---
 

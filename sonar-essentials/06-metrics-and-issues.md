@@ -32,6 +32,126 @@ Code that is harder to change safely (complexity, duplication, unclear logic).
 
 ---
 
+## Java Examples (What Each Type Looks Like)
+
+These are small, realistic snippets similar to what Sonar rules often flag.
+
+### A) Bug (Reliability): Possible NullPointerException
+
+**Problem:** `user` can be null → runtime crash.
+
+```java
+public String displayName(User user) {
+   return user.getFirstName() + " " + user.getLastName();
+}
+```
+
+**Safer:**
+
+```java
+public String displayName(User user) {
+   if (user == null) return "(unknown)";
+   return user.getFirstName() + " " + user.getLastName();
+}
+```
+
+### B) Code Smell (Maintainability): Overly complex branching
+
+**Problem:** deeply nested conditionals raise complexity and make changes risky.
+
+```java
+public int calculatePrice(Order order) {
+   int price = 0;
+   if (order != null) {
+      if (order.isVip()) {
+         if (order.getItems() != null) {
+            if (order.getItems().size() > 10) {
+               price = 100;
+            } else {
+               price = 120;
+            }
+         }
+      } else {
+         price = 150;
+      }
+   }
+   return price;
+}
+```
+
+**Safer/cleaner:**
+
+```java
+public int calculatePrice(Order order) {
+   if (order == null) return 0;
+   if (!order.isVip()) return 150;
+   if (order.getItems() == null) return 120;
+   return order.getItems().size() > 10 ? 100 : 120;
+}
+```
+
+### C) Vulnerability (Security): SQL injection via string concatenation
+
+**Problem:** attacker-controlled input becomes part of SQL.
+
+```java
+public User findUser(Connection conn, String username) throws Exception {
+   String sql = "SELECT id, name FROM users WHERE username='" + username + "'";
+   try (Statement st = conn.createStatement();
+       ResultSet rs = st.executeQuery(sql)) {
+      return rs.next() ? new User(rs.getLong("id"), rs.getString("name")) : null;
+   }
+}
+```
+
+**Safer:**
+
+```java
+public User findUser(Connection conn, String username) throws Exception {
+   String sql = "SELECT id, name FROM users WHERE username = ?";
+   try (PreparedStatement ps = conn.prepareStatement(sql)) {
+      ps.setString(1, username);
+      try (ResultSet rs = ps.executeQuery()) {
+         return rs.next() ? new User(rs.getLong("id"), rs.getString("name")) : null;
+      }
+   }
+}
+```
+
+### D) Security Hotspot: Crypto usage requires review
+
+**What Sonar is telling you:** “This is security-sensitive; ensure it’s configured safely.”
+
+```java
+Cipher cipher = Cipher.getInstance("AES/ECB/PKCS5Padding");
+cipher.init(Cipher.ENCRYPT_MODE, secretKey);
+byte[] encrypted = cipher.doFinal(plain);
+```
+
+Why hotspot?
+- ECB mode is usually insecure for most data patterns.
+- You should typically use an authenticated mode (e.g., GCM) with a random IV.
+
+### E) Duplication (Maintainability): Same logic copied twice
+
+```java
+public boolean isEligibleForDiscount(Order order) {
+   if (order == null) return false;
+   if (order.getItems() == null) return false;
+   return order.getItems().size() >= 5;
+}
+
+public boolean isEligibleForFreeShipping(Order order) {
+   if (order == null) return false;
+   if (order.getItems() == null) return false;
+   return order.getItems().size() >= 5;
+}
+```
+
+This is a typical duplication candidate: extract shared checks into one helper.
+
+---
+
 ## 2) Severity vs Priority
 
 Sonar reports severity (Blocker → Info), but your team should define priority.
@@ -56,6 +176,8 @@ Use them for:
 - comparing modules
 - tracking trend over time
 - deciding where to invest cleanup
+
+Tip: the UI may show separate ratings for **Reliability**, **Security**, and **Maintainability** (names can vary between SonarQube versions/SonarCloud). Treat them as summaries of “how bad the current issues are” rather than absolute truth.
 
 ---
 

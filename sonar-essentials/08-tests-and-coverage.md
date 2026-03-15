@@ -46,6 +46,54 @@ Typical approach:
 - Ensure it runs during CI
 - Point Sonar to the report path
 
+#### Java (Maven + JaCoCo) — Minimal working example
+
+1) Add JaCoCo to `pom.xml` (generates XML at `target/site/jacoco/jacoco.xml`):
+
+```xml
+<build>
+	<plugins>
+		<plugin>
+			<groupId>org.jacoco</groupId>
+			<artifactId>jacoco-maven-plugin</artifactId>
+			<version>0.8.12</version>
+			<executions>
+				<execution>
+					<goals>
+						<goal>prepare-agent</goal>
+					</goals>
+				</execution>
+				<execution>
+					<id>report</id>
+					<phase>test</phase>
+					<goals>
+						<goal>report</goal>
+					</goals>
+					<configuration>
+						<outputDirectory>${project.reporting.outputDirectory}/jacoco</outputDirectory>
+					</configuration>
+				</execution>
+			</executions>
+		</plugin>
+	</plugins>
+</build>
+```
+
+2) Point Sonar to the XML report (either in `sonar-project.properties` or CI args):
+
+```properties
+sonar.coverage.jacoco.xmlReportPaths=target/site/jacoco/jacoco.xml
+```
+
+3) Run in CI (conceptually):
+
+```bash
+mvn -B test
+mvn -B sonar:sonar -Dsonar.login=$SONAR_TOKEN -Dsonar.host.url=$SONAR_HOST_URL
+```
+
+If coverage shows 0%, the #1 cause is: Sonar can’t find the XML file or the paths don’t match.
+
 ### JavaScript/TypeScript (lcov)
 Generate coverage with your test runner and export lcov.
 
